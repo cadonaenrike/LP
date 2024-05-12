@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("../fonts/PPMonumentExtended-Light.otf") format("truetype"); /* Substitua 'truetype' pelo formato correto, se necessário */
+}
+@font-face {
+  font-family: "Monument-shine";
+  src: url("../fonts/PPMonumentExtended-Regular.otf") format("truetype"); /* Substitua 'truetype' pelo formato correto, se necessário */
+}
+
+.headerImage {
+  background-image: url("./img/bg_header.png");
+}
+
+@media (max-width: 768px) {
+  .headerImage {
+    background-image: url("./img/bg_header_mob.png");
+  }
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+}
+
+swiper-container {
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  width: 80%;
+}
+
+.mySwiper2 {
+  height: 10%;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 20%;
+  height: 80%;
+  opacity: 0.6;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
